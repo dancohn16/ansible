@@ -15,9 +15,11 @@
   - name: Configure ansible user to not use password for sudo
     blockinfile:
       path: /etc/sudoers
-      insertafter: "%sudo   ALL=(ALL:ALL) ALL"
-      block: 'ansible ALL=(ALL) NOPASSWD: ALL'
-      validate: 'visudo -cf %s'
+      insertafter: "^# Allow members of group sudo to execute any command"
+      block: |
+        ansible ALL=(ALL) NOPASSWD: ALL
+    validate: 'visudo -cf %s'
+
   
   - name: Make sure nano is installed
     apt:
