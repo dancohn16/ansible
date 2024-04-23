@@ -1,6 +1,6 @@
 ---
 - name: Bootstrap Ansible Control Server
-  hosts: all
+  hosts: localhost
   become: yes
   tasks:
   
@@ -8,7 +8,8 @@
     user:
       name: ansible
       comment: Ansible control user
-      group: sudoers
+      group: sudo
+      home: /home/ansible
 
   - name: Configure ansible user to not use password for sudo
     lineinfile:
