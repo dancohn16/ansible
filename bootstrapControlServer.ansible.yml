@@ -10,6 +10,7 @@
       comment: Ansible control user
       group: sudo
       home: /home/ansible
+      shell: /bin/bash
 
   - name: Configure ansible user to not use password for sudo
     blockinfile:
