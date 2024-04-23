@@ -19,10 +19,14 @@
       block: |
         ansible ALL=(ALL) NOPASSWD: ALL
       validate: 'visudo -cf %s'
-
+  
   - name: Make sure nano is installed
-    apt:
+    package:
       name: nano
       state: present
+
+  - name: Install Avahi for mDNS
+    package:
+      name: avahi-daemon
 
 
