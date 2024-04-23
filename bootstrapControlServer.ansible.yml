@@ -1,0 +1,24 @@
+---
+- name: Bootstrap Ansible Control Server
+  hosts: all
+  become: yes
+  tasks:
+  
+  - name: Add Ansible user
+    user:
+      name: ansible
+      comment: Ansible control user
+      group: sudoers
+
+  - name: Configure ansible user to not use password for sudo
+    lineinfile:
+      dest: /etc/sudoers
+      line: 'ansible ALL=(ALL) NOPASSWD: ALL'
+      validate: 'visudo -cf %s'
+  
+  - name: Make sure nano is installed
+    apt:
+      name: nano
+      state: present
+
+
