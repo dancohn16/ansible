@@ -16,9 +16,10 @@
     blockinfile:
       path: /etc/sudoers
       insertafter: "^# Allow members of group sudo to execute any command"
-      block: 'ansible ALL=(ALL) NOPASSWD: ALL'
-    validate: 'visudo -cf %s'
-  
+      block: |
+        ansible ALL=(ALL) NOPASSWD: ALL
+      validate: 'visudo -cf %s'
+
   - name: Make sure nano is installed
     apt:
       name: nano
