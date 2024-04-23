@@ -14,7 +14,7 @@
   - name: Configure ansible user to not use password for sudo
     blockinfile:
       path: /etc/sudoers
-      insertafter: "%sudo ALL=(ALL:ALL) ALL"
+      insertafter: "%sudo   ALL=(ALL:ALL) ALL"
       block: 'ansible ALL=(ALL) NOPASSWD: ALL'
       validate: 'visudo -cf %s'
   
