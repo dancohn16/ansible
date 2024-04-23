@@ -12,9 +12,10 @@
       home: /home/ansible
 
   - name: Configure ansible user to not use password for sudo
-    lineinfile:
-      dest: /etc/sudoers
-      line: 'ansible ALL=(ALL) NOPASSWD: ALL'
+    blockinfile:
+      path: /etc/sudoers
+      insertafter: "%sudo ALL=(ALL:ALL) ALL"
+      block: 'ansible ALL=(ALL) NOPASSWD: ALL'
       validate: 'visudo -cf %s'
   
   - name: Make sure nano is installed
