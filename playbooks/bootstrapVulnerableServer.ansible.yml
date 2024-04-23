@@ -1,0 +1,7 @@
+---
+- name: Bootstrap our victim Server
+  hosts: vulnMachines
+  become: yes
+  tasks:
+   
+  - name: 
