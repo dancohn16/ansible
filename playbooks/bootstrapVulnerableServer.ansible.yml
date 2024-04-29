@@ -17,19 +17,17 @@
   - name: Add David
     user:
       name: david
-      group:
+      groups:
         - users
         - sudo
-        - ssh
       home: /home/david
       shell: /bin/bash
 
   - name: Add John
     user:
       name: john
-      group:
+      groups:
         - users
-        - ssh
       home: /home/john
       shell: /bin/bash
 
