@@ -1,6 +1,6 @@
 ---
 - name: Bootstrap our victim Server
-  hosts: vulnMachines
+  hosts: localhost
   become: yes
   tasks:
    
@@ -30,6 +30,7 @@
         - users
       home: /home/john
       shell: /bin/bash
+      password: "{{ 'password' | password_hash('sha256') }}"
 
   - name: Download email file from GitHub
     get_url:
