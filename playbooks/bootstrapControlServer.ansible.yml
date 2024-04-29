@@ -25,8 +25,4 @@
       name: nano
       state: present
 
-  - name: Install Avahi for mDNS
-    package:
-      name: avahi-daemon
-
 

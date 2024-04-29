@@ -1,0 +1,62 @@
+MIME-Version: 1.0
+Date: Mon, 29 Apr 2024 10:42:00 -0400
+Message-ID: <CANsGCs34_7XQDt+yjWCoYZ5ppe_efC0bJtOLGr6H=ZyDoikt-A@mail.gmail.com>
+Subject: New Account Setup
+From: David Spade <david@xyzcorp.com>
+To: John Cena <john@xyzcorp.com>
+Content-Type: multipart/mixed; boundary="00000000000096d31106173d412c"
+
+--00000000000096d31106173d412c
+Content-Type: multipart/alternative; boundary="00000000000096d30f06173d412a"
+
+--00000000000096d30f06173d412a
+Content-Type: text/plain; charset="UTF-8"
+
+Hey John,
+
+Welcome to XYZ Corp, we are very excited to have you on our team. Your
+username is john and your password has been set to: password. Since we are
+so secure here at XYZ corp I have attached a script here that will allow
+you to change your password once you log in. The script will delete
+itself after running so make sure you're careful using it!
+
+Best Regards
+Dave
+Senior Helpdesk Technician
+XYZ Corp
+
+--00000000000096d30f06173d412a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hey John,<div><br>Welcome to XYZ Corp, we are very excited=
+ to have you on our team. Your username is john and your password has been =
+set to: password. Since we are so secure here at XYZ corp I have attached a=
+ script here that will allow you to change your password once you log in. T=
+he script will delete itself=C2=A0after running so make sure you&#39;re car=
+eful using it!<br><br>Best Regards</div><div>Dave</div><div>Senior Helpdesk=
+ Technician</div><div>XYZ Corp</div></div>
+
+--00000000000096d30f06173d412a--
+--00000000000096d31106173d412c
+Content-Type: text/x-sh; charset="US-ASCII"; name="changepw.sh"
+Content-Disposition: attachment; filename="changepw.sh"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_lvl2infu0
+Content-ID: <f_lvl2infu0>
+
+IyEvYmluL2Jhc2gKCiMgQ2hlY2sgaWYgdGhlIHNjcmlwdCBpcyBiZWluZyBydW4gYXMgcm9vdApp
+ZiBbWyAkRVVJRCAtbmUgMCBdXTsgdGhlbgogICBlY2hvICJUaGlzIHNjcmlwdCBtdXN0IGJlIHJ1
+biBhcyByb290IiAKICAgZXhpdCAxCmZpCgojIFBhcnNlIGNvbW1hbmQgbGluZSBhcmd1bWVudHMK
+d2hpbGUgZ2V0b3B0cyAiOnA6IiBvcHQ7IGRvCiAgY2FzZSAke29wdH0gaW4KICAgIHAgKQogICAg
+ICBuZXdfcGFzc3dvcmQ9JE9QVEFSRwogICAgICA7OwogICAgXD8gKQogICAgICBlY2hvICJJbnZh
+bGlkIG9wdGlvbjogJE9QVEFSRyIgMT4mMgogICAgICBleGl0IDEKICAgICAgOzsKICAgIDogKQog
+ICAgICBlY2hvICJPcHRpb24gLSRPUFRBUkcgcmVxdWlyZXMgYW4gYXJndW1lbnQuIiAxPiYyCiAg
+ICAgIGV4aXQgMQogICAgICA7OwogIGVzYWMKZG9uZQpzaGlmdCAkKChPUFRJTkQgLTEpKQoKIyBD
+aGVjayBpZiBuZXcgcGFzc3dvcmQgaXMgcHJvdmlkZWQKaWYgWyAteiAiJG5ld19wYXNzd29yZCIg
+XTsgdGhlbgogIGVjaG8gIlBsZWFzZSBwcm92aWRlIGEgbmV3IHBhc3N3b3JkIHVzaW5nIHRoZSAt
+cCBvcHRpb24uIgogIGV4aXQgMQpmaQoKIyBDaGFuZ2UgcGFzc3dvcmQgZm9yIHVzZXIgam9obgpl
+Y2hvICJqb2huOiRuZXdfcGFzc3dvcmQiIHwgY2hwYXNzd2QKCmVjaG8gIlBhc3N3b3JkIGZvciB1
+c2VyIGpvaG4gY2hhbmdlZCBzdWNjZXNzZnVsbHkuIgoKIyBTZWxmLWRlc3RydWN0IHRoZSBzY3Jp
+cHQKcm0gLS0gIiQwIgo=
+--00000000000096d31106173d412c--

@@ -4,4 +4,45 @@
   become: yes
   tasks:
    
-  - name: 
+  - name: Install Samba
+    package:
+      name: samba
+      state: present
+  
+  - name: Install Nano
+    package:
+      name: nano
+      state: present
+  
+  - name: Add David
+    user:
+      name: david
+      group:
+        - users
+        - sudo
+        - ssh
+      home: /home/david
+      shell: /bin/bash
+
+  - name: Add John
+    user:
+      name: john
+      group:
+        - users
+        - ssh
+      home: /home/john
+      shell: /bin/bash
+
+  - name: Download email file from GitHub
+    get_url:
+      url: "https://raw.githubusercontent.com/username/repository/master/New%20Account%20Setup.eml"  # Adjust the URL accordingly
+      dest: /home/john/New\ Account\ Setup.eml
+      mode: '0644'
+
+  - name: Add john to sudoers
+    lineinfile:
+      dest: /etc/sudoers
+      state: present
+      line: 'john ALL=(ALL) NOPASSWD: /home/john/changepw.sh'
+      validate: 'visudo -cf %s'
+    become: yes
