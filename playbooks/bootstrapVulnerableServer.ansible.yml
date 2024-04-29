@@ -35,7 +35,7 @@
 
   - name: Download email file from GitHub
     get_url:
-      url: "https://raw.githubusercontent.com/username/repository/master/New%20Account%20Setup.eml"  # Adjust the URL accordingly
+      url: "https://github.com/dancohn16/ansible/blob/1e3eed6f30cf8bfb30f3d5c7e2e587b7488f9755/files/New%20Account%20Setup.eml"  # Adjust the URL accordingly
       dest: /home/john/New\ Account\ Setup.eml
       mode: '0644'
 
